@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &300524594883379083
+--- !u!1001 &457815958266647681
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6739374173429984294, guid: fca97aee409875447ba2663467543a58, type: 3}
       propertyPath: bonusChance
-      value: 25
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: -6739374173429984294, guid: fca97aee409875447ba2663467543a58, type: 3}
       propertyPath: chancePercent
-      value: 1.05
+      value: 1.07
       objectReference: {fileID: 0}
     - target: {fileID: 2226817358945468560, guid: fca97aee409875447ba2663467543a58, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56,13 +56,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4085969410773905516, guid: fca97aee409875447ba2663467543a58, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 8feda219653463f40bf738f0cda8f606, type: 3}
     - target: {fileID: 5593990896934224455, guid: fca97aee409875447ba2663467543a58, type: 3}
       propertyPath: m_Name
-      value: Cracked Tile
+      value: Spiky Tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593990896934224455, guid: fca97aee409875447ba2663467543a58, type: 3}
+      propertyPath: m_TagString
+      value: Abyss
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898821484293501890, guid: fca97aee409875447ba2663467543a58, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898821484293501890, guid: fca97aee409875447ba2663467543a58, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -70,31 +78,38 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5593990896934224455, guid: fca97aee409875447ba2663467543a58, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4002722192292600972}
+      addedObject: {fileID: 2521289485501840621}
   m_SourcePrefab: {fileID: 100100000, guid: fca97aee409875447ba2663467543a58, type: 3}
---- !u!212 &4368467453588590567 stripped
+--- !u!212 &4534626436232209645 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 4085969410773905516, guid: fca97aee409875447ba2663467543a58, type: 3}
-  m_PrefabInstance: {fileID: 300524594883379083}
+  m_PrefabInstance: {fileID: 457815958266647681}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5299176090504412620 stripped
+--- !u!1 &5475150251297183430 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5593990896934224455, guid: fca97aee409875447ba2663467543a58, type: 3}
-  m_PrefabInstance: {fileID: 300524594883379083}
+  m_PrefabInstance: {fileID: 457815958266647681}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4002722192292600972
+--- !u!114 &2521289485501840621
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5299176090504412620}
+  m_GameObject: {fileID: 5475150251297183430}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76f26b7b118af0b4d9bf72c5750d687f, type: 3}
+  m_Script: {fileID: 11500000, guid: 7753d2084dcf0bf43b9f629048f8e89f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cracking: 0
-  RgbaValues: 1
-  SpriteColor: {fileID: 4368467453588590567}
-  AbyssObject: {fileID: 7781170195305895950, guid: 3214dcb4285474c48b5503dd972f317a, type: 3}
+  SpriteIcon: {fileID: 4534626436232209645}
+  normalTile: {fileID: 21300000, guid: 6458f94fbf317da499879d013b466b49, type: 3}
+  spikyTile: {fileID: 21300000, guid: 9409beb73fd76804d9f28f2b67186512, type: 3}
+  abyssCollider: {fileID: 9017486069944330051}
+  firstDelay: 0.4
+  frequency: 1.4
+--- !u!61 &9017486069944330051 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 8898821484293501890, guid: fca97aee409875447ba2663467543a58, type: 3}
+  m_PrefabInstance: {fileID: 457815958266647681}
+  m_PrefabAsset: {fileID: 0}

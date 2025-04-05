@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Tile
   - Abyss
+  - Coin
+  - Death
   layers:
   - Default
   - TransparentFX

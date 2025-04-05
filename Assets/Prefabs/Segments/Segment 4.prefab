@@ -685,6 +685,10 @@ PrefabInstance:
       propertyPath: segment
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7646698918532599032, guid: 5425a72225e947845873191f20bc85a9, type: 3}
+      propertyPath: SegmentsPossible.Array.data[3]
+      value: 
+      objectReference: {fileID: 8866018557982765628}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1217,11 +1221,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: pauseTime
-      value: 0.2
+      value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: movementSpeed
-      value: 1
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.size
@@ -1357,11 +1361,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: pauseTime
-      value: 0.2
+      value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: movementSpeed
-      value: 1
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.size
@@ -1369,11 +1373,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.data[0].y
-      value: 2.4
+      value: 3.2
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.data[1].y
-      value: -2.4
+      value: -1.6
       objectReference: {fileID: 0}
     - target: {fileID: 1656935696552439581, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1381,7 +1385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1656935696552439581, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4
+      value: -4.8
       objectReference: {fileID: 0}
     - target: {fileID: 1656935696552439581, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: m_LocalPosition.z

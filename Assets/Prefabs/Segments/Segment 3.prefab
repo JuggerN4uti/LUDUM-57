@@ -1371,6 +1371,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turret
       objectReference: {fileID: 0}
+    - target: {fileID: 7285278999338671143, guid: b6989b1039c4d4147a5a9522d3ab1c9c, type: 3}
+      propertyPath: force
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285278999338671143, guid: b6989b1039c4d4147a5a9522d3ab1c9c, type: 3}
+      propertyPath: frequency
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285278999338671143, guid: b6989b1039c4d4147a5a9522d3ab1c9c, type: 3}
+      propertyPath: firstDelay
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8385116004200128079, guid: b6989b1039c4d4147a5a9522d3ab1c9c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

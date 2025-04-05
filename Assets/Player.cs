@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public GameObject PlayerObject;
-    public Transform PlayerForm;
+    public Transform PlayerForm, DeathForm;
     public bool alive, ready;
-    public int meters;
+    public int meters, gold;
     public float maxDepth;
-    public TMPro.TextMeshProUGUI DepthText;
+    public TMPro.TextMeshProUGUI DepthText, GoldText;
 
     void Start()
     {
@@ -50,6 +50,7 @@ public class Player : MonoBehaviour
             }
             if (transform.position.y < maxDepth)
                 maxDepth = transform.position.y;
+            DeathForm.position = new Vector3(PlayerForm.position.x, DeathForm.position.y, DeathForm.position.z);
             DisplayDepth();
             ready = false;
             Invoke("Recover", 0.195f);
@@ -64,6 +65,11 @@ public class Player : MonoBehaviour
             alive = false;
             PlayerObject.SetActive(false);
             //Destroy(gameObject);
+        }
+        if (other.transform.tag == "Coin")
+        {
+            GainGold(1);
+            Destroy(other.gameObject);
         }
     }
 
@@ -93,5 +99,11 @@ public class Player : MonoBehaviour
             else DepthText.text = (meters / 1000).ToString("") + "," + (meters % 1000).ToString("") + "m";
         }
         else DepthText.text = meters.ToString("") + "m";
+    }
+
+    void GainGold(int amount)
+    {
+        gold += amount;
+        GoldText.text = "+" + gold.ToString("");
     }
 }
