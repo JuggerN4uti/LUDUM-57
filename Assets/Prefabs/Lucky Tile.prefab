@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &457815958266647681
+--- !u!1001 &2352987884649625257
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6739374173429984294, guid: fca97aee409875447ba2663467543a58, type: 3}
       propertyPath: bonusChance
-      value: 49
+      value: 81
       objectReference: {fileID: 0}
     - target: {fileID: -6739374173429984294, guid: fca97aee409875447ba2663467543a58, type: 3}
       propertyPath: chancePercent
-      value: 1.07
+      value: 1.09
       objectReference: {fileID: 0}
     - target: {fileID: 2226817358945468560, guid: fca97aee409875447ba2663467543a58, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56,60 +56,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4085969410773905516, guid: fca97aee409875447ba2663467543a58, type: 3}
+      propertyPath: m_Color.b
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 4085969410773905516, guid: fca97aee409875447ba2663467543a58, type: 3}
+      propertyPath: m_Color.r
+      value: 0.78431374
+      objectReference: {fileID: 0}
     - target: {fileID: 5593990896934224455, guid: fca97aee409875447ba2663467543a58, type: 3}
       propertyPath: m_Name
-      value: Spiky Tile
-      objectReference: {fileID: 0}
-    - target: {fileID: 5593990896934224455, guid: fca97aee409875447ba2663467543a58, type: 3}
-      propertyPath: m_TagString
-      value: Damage
-      objectReference: {fileID: 0}
-    - target: {fileID: 8898821484293501890, guid: fca97aee409875447ba2663467543a58, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8898821484293501890, guid: fca97aee409875447ba2663467543a58, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
+      value: Lucky Tile
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5593990896934224455, guid: fca97aee409875447ba2663467543a58, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2521289485501840621}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fca97aee409875447ba2663467543a58, type: 3}
---- !u!212 &4534626436232209645 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 4085969410773905516, guid: fca97aee409875447ba2663467543a58, type: 3}
-  m_PrefabInstance: {fileID: 457815958266647681}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5475150251297183430 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5593990896934224455, guid: fca97aee409875447ba2663467543a58, type: 3}
-  m_PrefabInstance: {fileID: 457815958266647681}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2521289485501840621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5475150251297183430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7753d2084dcf0bf43b9f629048f8e89f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SpriteIcon: {fileID: 4534626436232209645}
-  normalTile: {fileID: 21300000, guid: 6458f94fbf317da499879d013b466b49, type: 3}
-  spikyTile: {fileID: 21300000, guid: 9409beb73fd76804d9f28f2b67186512, type: 3}
-  abyssCollider: {fileID: 9017486069944330051}
-  firstDelay: 0.4
-  frequency: 1.4
---- !u!61 &9017486069944330051 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 8898821484293501890, guid: fca97aee409875447ba2663467543a58, type: 3}
-  m_PrefabInstance: {fileID: 457815958266647681}
-  m_PrefabAsset: {fileID: 0}

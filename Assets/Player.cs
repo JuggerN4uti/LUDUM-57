@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     public GameObject[] Screens;
     public TMPro.TextMeshProUGUI DepthText, GoldText;
     public Image BackgroundImage;
-    public float light;
+    public float sunRays;
 
     void Start()
     {
@@ -75,8 +75,8 @@ public class Player : MonoBehaviour
             if (transform.position.y < maxDepth)
             {
                 maxDepth = transform.position.y;
-                light = 0.92f + maxDepth / 200f;
-                BackgroundImage.color = new Color(light, light, light, 1f);
+                sunRays = 0.92f + maxDepth / 200f;
+                BackgroundImage.color = new Color(sunRays, sunRays, sunRays, 1f);
             }
             DeathForm.position = new Vector3(PlayerForm.position.x, DeathForm.position.y, DeathForm.position.z);
             DisplayDepth();

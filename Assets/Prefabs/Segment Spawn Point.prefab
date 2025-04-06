@@ -50,6 +50,15 @@ MonoBehaviour:
   - {fileID: 5109183047864070379, guid: 7754626c69a5ea7428c0c08fe279ce6d, type: 3}
   - {fileID: 8105890876766885383, guid: c55ef2344ebd6f84d9c4139f1d3fde96, type: 3}
   - {fileID: 8866018557982765628, guid: 3d8411e4ba7edbd4cbac04a0690bcc7b, type: 3}
+  - {fileID: 5888561404030210095, guid: 3df58cff32cf37a4b958ade7d9a39b4e, type: 3}
+  - {fileID: 706263929633952210, guid: 0d600429f535040418b2adc0803f8978, type: 3}
+  - {fileID: 4919684283291151646, guid: 6f8d15cd3ea68294e8e95faff8c61c92, type: 3}
+  - {fileID: 555157963673000238, guid: baa9113b65443954fb2451727e595be9, type: 3}
+  - {fileID: 5569104947819542676, guid: 4642a80f595f80d4f88e0944f7da64a2, type: 3}
+  - {fileID: 33510803612819142, guid: ab21b06b19c55bf4f9ebc906c89526f3, type: 3}
+  - {fileID: 5184758973034808153, guid: 1ac0a33d35adfbf47971a6a67d02fde5, type: 3}
+  - {fileID: 7309662187013558400, guid: 2510814f7e6d5cc41b668fd12dc3fa3d, type: 3}
+  - {fileID: 6137554958480347493, guid: bff78577903422646be7c50dbe342dfc, type: 3}
   spawned: 0
   segment: 0
   id: 0
@@ -96,5 +105,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7, y: 21}
+  m_Size: {x: 14, y: 21}
   m_EdgeRadius: 0

@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class Spikes : MonoBehaviour
 {
-    public SpriteRenderer SpriteIcon;
-    public Sprite normalTile, spikyTile;
+    public SpriteRenderer Sprite;
     public Collider2D abyssCollider;
     bool spikey;
-    public float firstDelay, frequency;
+    public float firstDelay, retractTime, expandTime;
 
     void Start()
     {
@@ -24,17 +23,17 @@ public class Spikes : MonoBehaviour
 
     void Retract()
     {
-        SpriteIcon.sprite = normalTile;
+        Sprite.enabled = false;
         abyssCollider.enabled = false;
         spikey = false;
-        Invoke("Change", frequency);
+        Invoke("Change", retractTime);
     }
 
     void Expand()
     {
-        SpriteIcon.sprite = spikyTile;
+        Sprite.enabled = true;
         abyssCollider.enabled = true;
         spikey = true;
-        Invoke("Change", 1.1f);
+        Invoke("Change", expandTime);
     }
 }

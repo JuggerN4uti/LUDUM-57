@@ -1225,7 +1225,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: movementSpeed
-      value: 1.1
+      value: 1.15
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.size
@@ -1365,7 +1365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: movementSpeed
-      value: 1.1
+      value: 1.15
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.size
