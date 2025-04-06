@@ -8,6 +8,8 @@ TagManager:
   - Abyss
   - Coin
   - Death
+  - Damage
+  - Gem
   layers:
   - Default
   - TransparentFX

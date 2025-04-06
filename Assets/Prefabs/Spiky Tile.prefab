@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5593990896934224455, guid: fca97aee409875447ba2663467543a58, type: 3}
       propertyPath: m_TagString
-      value: Abyss
+      value: Damage
       objectReference: {fileID: 0}
     - target: {fileID: 8898821484293501890, guid: fca97aee409875447ba2663467543a58, type: 3}
       propertyPath: m_Enabled

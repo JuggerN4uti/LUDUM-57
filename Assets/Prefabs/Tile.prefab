@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CoinObject: {fileID: 5760736000053084737, guid: ac545a879f3b76f498e669eeaf88f803, type: 3}
+  GemObject: {fileID: 3572785351534800191, guid: 85c0d20adfb712946a47e00fce03ab3d, type: 3}
   depth: 0
   chance: 0
   bonusChance: 0

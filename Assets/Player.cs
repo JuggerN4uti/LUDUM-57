@@ -16,6 +16,10 @@ public class Player : MonoBehaviour
     public int meters, gold;
     public float maxDepth;
 
+    [Header("Upgrades")]
+    public int armor;
+    public GameObject[] ArmorIconObject;
+
     [Header("Screens")]
     public GameObject[] Screens;
     public TMPro.TextMeshProUGUI DepthText, GoldText;
@@ -23,6 +27,11 @@ public class Player : MonoBehaviour
     void Start()
     {
         maxDepth = transform.position.y;
+        armor = PlayerPrefs.GetInt("armor");
+        for (int i = 0; i < armor; i++)
+        {
+            ArmorIconObject[i].SetActive(true);
+        }
     }
 
     void Update()
@@ -38,6 +47,8 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
             Restart();
+        if (Input.GetKeyDown(KeyCode.P))
+            ResetPrefs();
     }
 
     void Move(char direction)
@@ -64,7 +75,7 @@ public class Player : MonoBehaviour
             DeathForm.position = new Vector3(PlayerForm.position.x, DeathForm.position.y, DeathForm.position.z);
             DisplayDepth();
             ready = false;
-            Invoke("Recover", 0.195f);
+            Invoke("Recover", 0.225f);
         }
 
     }
@@ -104,9 +115,24 @@ public class Player : MonoBehaviour
             Death();
             //Destroy(gameObject);
         }
-        if (other.transform.tag == "Coin")
+        else if (other.transform.tag == "Damage")
+        {
+            if (armor > 0)
+            {
+                armor--;
+                ArmorIconObject[armor].SetActive(false);
+                Destroy(other.gameObject);
+            }
+            else Death();
+        }
+        else if (other.transform.tag == "Coin")
         {
             GainGold(1);
+            Destroy(other.gameObject);
+        }
+        else if (other.transform.tag == "Gem")
+        {
+            GainGold(5);
             Destroy(other.gameObject);
         }
     }
@@ -129,5 +155,11 @@ public class Player : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
+    }
+
+    void ResetPrefs()
+    {
+        PlayerPrefs.SetInt("gold", 356);
+        PlayerPrefs.SetInt("armor", 0);
     }
 }
