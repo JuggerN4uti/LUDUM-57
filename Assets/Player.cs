@@ -2,14 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    [Header("Gameplay")]
+    public Perma PermaScript;
+
+    [Header("Gameplay")]
     public GameObject PlayerObject;
     public Transform PlayerForm, DeathForm;
     public bool alive, ready;
     public int meters, gold;
     public float maxDepth;
+
+    [Header("Screens")]
+    public GameObject[] Screens;
     public TMPro.TextMeshProUGUI DepthText, GoldText;
 
     void Start()
@@ -27,6 +35,9 @@ public class Player : MonoBehaviour
             Move('A');
         else if (Input.GetKey(KeyCode.D))
             Move('D');
+
+        if (Input.GetKeyDown(KeyCode.R))
+            Restart();
     }
 
     void Move(char direction)
@@ -58,21 +69,6 @@ public class Player : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.transform.tag == "Abyss")
-        {
-            alive = false;
-            PlayerObject.SetActive(false);
-            //Destroy(gameObject);
-        }
-        if (other.transform.tag == "Coin")
-        {
-            GainGold(1);
-            Destroy(other.gameObject);
-        }
-    }
-
     void Recover()
     {
         ready = true;
@@ -101,9 +97,37 @@ public class Player : MonoBehaviour
         else DepthText.text = meters.ToString("") + "m";
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.transform.tag == "Abyss")
+        {
+            Death();
+            //Destroy(gameObject);
+        }
+        if (other.transform.tag == "Coin")
+        {
+            GainGold(1);
+            Destroy(other.gameObject);
+        }
+    }
+
+    void Death()
+    {
+        alive = false;
+        PlayerObject.SetActive(false);
+        PermaScript.RunSummary();
+        Screens[0].SetActive(false);
+        Screens[1].SetActive(true);
+    }
+
     void GainGold(int amount)
     {
         gold += amount;
         GoldText.text = "+" + gold.ToString("");
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
     }
 }
