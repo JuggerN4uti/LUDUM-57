@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    [Header("Gameplay")]
+    [Header("Scripts")]
     public Perma PermaScript;
 
     [Header("Gameplay")]
@@ -23,6 +23,8 @@ public class Player : MonoBehaviour
     [Header("Screens")]
     public GameObject[] Screens;
     public TMPro.TextMeshProUGUI DepthText, GoldText;
+    public Image BackgroundImage;
+    public float light;
 
     void Start()
     {
@@ -71,7 +73,11 @@ public class Player : MonoBehaviour
                     break;
             }
             if (transform.position.y < maxDepth)
+            {
                 maxDepth = transform.position.y;
+                light = 0.92f + maxDepth / 200f;
+                BackgroundImage.color = new Color(light, light, light, 1f);
+            }
             DeathForm.position = new Vector3(PlayerForm.position.x, DeathForm.position.y, DeathForm.position.z);
             DisplayDepth();
             ready = false;
