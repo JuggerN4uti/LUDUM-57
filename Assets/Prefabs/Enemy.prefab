@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: af5c30e4fa540c940a60dc1b6bda3492, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 18bacce7e9cdf2c43865753b679125b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,8 +98,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5eadee4518c74447b7e3e4c2cbd08db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemyForm: {fileID: 1656935696552439581}
   MovePoint:
   - {x: 0, y: 0, z: 0}
+  turnLeft: 
   moving: 0
   movementSpeed: 2.5
   pauseTime: 0.25

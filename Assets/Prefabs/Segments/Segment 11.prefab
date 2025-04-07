@@ -470,11 +470,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: movementSpeed
-      value: 1.64
+      value: 1.72
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.data[3]
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.data[1].x
@@ -952,11 +964,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: movementSpeed
-      value: 1.64
+      value: 1.72
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.data[3]
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.data[1].x
@@ -1736,11 +1760,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: movementSpeed
-      value: 1.64
+      value: 1.72
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.data[3]
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.data[1].x
@@ -2016,11 +2052,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: movementSpeed
-      value: 1.64
+      value: 1.72
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.data[3]
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.data[1].x

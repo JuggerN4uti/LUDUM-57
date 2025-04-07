@@ -440,8 +440,20 @@ PrefabInstance:
       value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.data[3]
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.data[1].x
@@ -678,8 +690,20 @@ PrefabInstance:
       value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.data[1]
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.data[1].x
@@ -704,6 +728,10 @@ PrefabInstance:
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.data[3].y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656935696552439581, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.8
       objectReference: {fileID: 0}
     - target: {fileID: 1656935696552439581, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1416,8 +1444,20 @@ PrefabInstance:
       value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.data[2]
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.data[1].x
@@ -1442,6 +1482,10 @@ PrefabInstance:
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.data[3].y
       value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656935696552439581, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.8
       objectReference: {fileID: 0}
     - target: {fileID: 1656935696552439581, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3174,8 +3218,16 @@ PrefabInstance:
       value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
+      propertyPath: turnLeft.Array.data[3]
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: MovePoint.Array.data[1].x

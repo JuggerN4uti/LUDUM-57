@@ -14,7 +14,7 @@ public class Crack : MonoBehaviour
         if (other.transform.tag == "Player" && !cracking)
         {
             cracking = true;
-            Invoke("Perish", 2.25f);
+            Invoke("Perish", 2.11f);
         }
     }
 

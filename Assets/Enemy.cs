@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    //public Transform EnemyForm;
+    public Transform EnemyForm;
     public Vector3[] MovePoint;
+    public bool[] turnLeft;
     public bool moving;
     public float movementSpeed, pauseTime;
     public int destination;
@@ -37,6 +38,9 @@ public class Enemy : MonoBehaviour
         destination++;
         if (destination >= MovePoint.Length)
             destination = 0;
+        if (turnLeft[destination])
+            EnemyForm.localScale = new Vector3(-0.8f, 0.8f, 1f);
+        else EnemyForm.localScale = new Vector3(0.8f, 0.8f, 1f);
         moving = true;
     }
 }

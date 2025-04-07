@@ -59,6 +59,9 @@ MonoBehaviour:
   - {fileID: 5184758973034808153, guid: 1ac0a33d35adfbf47971a6a67d02fde5, type: 3}
   - {fileID: 7309662187013558400, guid: 2510814f7e6d5cc41b668fd12dc3fa3d, type: 3}
   - {fileID: 6137554958480347493, guid: bff78577903422646be7c50dbe342dfc, type: 3}
+  - {fileID: 2833245235949602516, guid: 070e6d50a227de142a6cc58a689f3066, type: 3}
+  - {fileID: 1960574995830358634, guid: f447e9f96d772b340b35e0e7d917f3ae, type: 3}
+  - {fileID: 224026600671489601, guid: 3e517ccab2d692c4abe0b70b4bd63371, type: 3}
   spawned: 0
   segment: 0
   id: 0
