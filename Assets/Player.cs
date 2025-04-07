@@ -75,8 +75,8 @@ public class Player : MonoBehaviour
             if (transform.position.y < maxDepth)
             {
                 maxDepth = transform.position.y;
-                sunRays = 0.92f + maxDepth / 200f;
-                BackgroundImage.color = new Color(sunRays, sunRays, sunRays, 1f);
+                sunRays = 1f + maxDepth / 100f;
+                BackgroundImage.color = new Color(0f, 0.212f * sunRays, 0.667f * sunRays, 1f);
             }
             DeathForm.position = new Vector3(PlayerForm.position.x, DeathForm.position.y, DeathForm.position.z);
             DisplayDepth();

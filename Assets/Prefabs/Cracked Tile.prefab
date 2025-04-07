@@ -59,10 +59,18 @@ PrefabInstance:
     - target: {fileID: 4085969410773905516, guid: fca97aee409875447ba2663467543a58, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 8feda219653463f40bf738f0cda8f606, type: 3}
+      objectReference: {fileID: 21300000, guid: e7da46fdfc0f8f54781f59ce4ea09ea4, type: 3}
     - target: {fileID: 5593990896934224455, guid: fca97aee409875447ba2663467543a58, type: 3}
       propertyPath: m_Name
       value: Cracked Tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898821484293501890, guid: fca97aee409875447ba2663467543a58, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898821484293501890, guid: fca97aee409875447ba2663467543a58, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
