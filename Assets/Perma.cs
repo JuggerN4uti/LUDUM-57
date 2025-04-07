@@ -64,7 +64,7 @@ public class Perma : MonoBehaviour
         }
         else
         {
-            BuyButton[0].gameObject.SetActive(false);
+            //BuyButton[0].gameObject.SetActive(false);
             CostText[0].text = "Maxxed";
         }
 

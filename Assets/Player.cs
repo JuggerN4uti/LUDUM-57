@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     [Header("Gameplay")]
     public GameObject PlayerObject;
     public Transform PlayerForm, DeathForm;
+    public SpriteRenderer PlayerSprite;
     public bool alive, ready;
     public int meters, gold;
     public float maxDepth;
@@ -131,6 +132,8 @@ public class Player : MonoBehaviour
         else if (other.transform.tag == "Damage")
         {
             armor--;
+            PlayerSprite.color = new Color(1f, 0f, 0f, 1f);
+            Invoke("Regen", 0.275f);
             ArmorIconObject[armor].SetActive(false);
             if (armor == 0)
                 Death();
@@ -146,6 +149,11 @@ public class Player : MonoBehaviour
             GainGold(5);
             Destroy(other.gameObject);
         }
+    }
+
+    void Regen()
+    {
+        PlayerSprite.color = new Color(1f, 1f, 1f, 1f);
     }
 
     void Death()

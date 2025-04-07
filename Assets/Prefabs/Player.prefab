@@ -112,6 +112,7 @@ MonoBehaviour:
   PlayerObject: {fileID: 70289813721359472}
   PlayerForm: {fileID: 978043459658608893}
   DeathForm: {fileID: 0}
+  PlayerSprite: {fileID: 8551570124684492345}
   alive: 1
   ready: 1
   meters: 0
