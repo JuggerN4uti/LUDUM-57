@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         maxDepth = transform.position.y;
-        armor = PlayerPrefs.GetInt("armor");
+        armor = PlayerPrefs.GetInt("armor") + 1;
         for (int i = 0; i < armor; i++)
         {
             ArmorIconObject[i].SetActive(true);
@@ -123,13 +123,11 @@ public class Player : MonoBehaviour
         }
         else if (other.transform.tag == "Damage")
         {
-            if (armor > 0)
-            {
-                armor--;
-                ArmorIconObject[armor].SetActive(false);
-                Destroy(other.gameObject);
-            }
-            else Death();
+            armor--;
+            ArmorIconObject[armor].SetActive(false);
+            if (armor == 0)
+                Death();
+            else Destroy(other.gameObject);
         }
         else if (other.transform.tag == "Coin")
         {
