@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class Perma : MonoBehaviour
 {
     public Player PlayerScript;
-    public int runCoins, totalCoins;
-    public TMPro.TextMeshProUGUI[] GoldText;
+    public int runCoins, totalCoins, depth, lastRecord;
+    public TMPro.TextMeshProUGUI[] GoldText, DepthText;
 
     [Header("Shop")]
     public Button[] BuyButton;
@@ -19,30 +19,39 @@ public class Perma : MonoBehaviour
     {
         runCoins = PlayerScript.gold;
         totalCoins = PlayerPrefs.GetInt("gold") + runCoins;
+        depth = PlayerScript.meters;
+        lastRecord = PlayerPrefs.GetInt("max");
+        CheckDepths();
         DisplayGold();
         SetShop();
         CheckShop();
         PlayerPrefs.SetInt("gold", totalCoins);
     }
 
+    void CheckDepths()
+    {
+        if (depth < lastRecord)
+        {
+            DepthText[0].text = AdjustText(depth);
+            DepthText[1].text = "record:\n" + AdjustText(lastRecord);
+        }
+        else if (depth > lastRecord)
+        {
+            DepthText[0].text = "new record!:\n" + AdjustText(depth);
+            DepthText[1].text = "last:\n" + AdjustText(lastRecord);
+            PlayerPrefs.SetInt("max", depth);
+        }
+        else
+        {
+            DepthText[0].text = "same depth\n" + AdjustText(depth);
+            DepthText[1].text = "as record\n" + AdjustText(lastRecord);
+        }
+    }
+
     void DisplayGold()
     {
         GoldText[0].text = "+" + runCoins.ToString("");
-        if (totalCoins >= 1000)
-        {
-            if (totalCoins % 1000 < 100)
-            {
-                if (totalCoins % 1000 < 10)
-                {
-                    if (totalCoins % 1000 == 0)
-                        GoldText[1].text = (totalCoins / 1000).ToString("") + ",000";
-                    else GoldText[1].text = (totalCoins / 1000).ToString("") + ",00" + (totalCoins % 1000).ToString("");
-                }
-                else GoldText[1].text = (totalCoins / 1000).ToString("") + ",0" + (totalCoins % 1000).ToString("");
-            }
-            else GoldText[1].text = (totalCoins / 1000).ToString("") + "," + (totalCoins % 1000).ToString("");
-        }
-        else GoldText[1].text = totalCoins.ToString("");
+        GoldText[1].text = AdjustText(totalCoins);
     }
 
     void SetShop()
@@ -82,5 +91,24 @@ public class Perma : MonoBehaviour
         PlayerPrefs.SetInt("gold", totalCoins);
         SetShop();
         CheckShop();
+    }
+
+    string AdjustText(int number)
+    {
+        if (number >= 1000)
+        {
+            if (number % 1000 < 100)
+            {
+                if (number % 1000 < 10)
+                {
+                    if (number % 1000 == 0)
+                        return (number / 1000).ToString("") + ",000";
+                    else return (number / 1000).ToString("") + ",00" + (number % 1000).ToString("");
+                }
+                else return (number / 1000).ToString("") + ",0" + (number % 1000).ToString("");
+            }
+            else return (number / 1000).ToString("") + "," + (number % 1000).ToString("");
+        }
+        else return number.ToString("");
     }
 }

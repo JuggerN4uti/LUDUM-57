@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] private AudioSource[] JumpSource;
+    public int CurrentClip;
+
     [Header("Scripts")]
     public Perma PermaScript;
 
@@ -57,6 +60,10 @@ public class Player : MonoBehaviour
     {
         if (ready && alive)
         {
+            JumpSource[CurrentClip].Play();
+            CurrentClip++;
+            if (CurrentClip > 2)
+                CurrentClip = 0;
             switch (direction)
             {
                 case 'S':
@@ -148,7 +155,6 @@ public class Player : MonoBehaviour
         PermaScript.RunSummary();
         Screens[0].SetActive(false);
         Screens[1].SetActive(true);
-
     }
 
     void GainGold(int amount)
@@ -159,7 +165,12 @@ public class Player : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
+        SceneManager.LoadScene(1);
+    }
+
+    public void GoBack()
+    {
+        SceneManager.LoadScene(0);
     }
 
     void ResetPrefs()
