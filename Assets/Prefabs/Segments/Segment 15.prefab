@@ -350,11 +350,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285278999338671143, guid: b6989b1039c4d4147a5a9522d3ab1c9c, type: 3}
       propertyPath: force
-      value: 2.7
+      value: 2.57
       objectReference: {fileID: 0}
     - target: {fileID: 7285278999338671143, guid: b6989b1039c4d4147a5a9522d3ab1c9c, type: 3}
       propertyPath: frequency
-      value: 1.4
+      value: 1.14
       objectReference: {fileID: 0}
     - target: {fileID: 7285278999338671143, guid: b6989b1039c4d4147a5a9522d3ab1c9c, type: 3}
       propertyPath: firstDelay
@@ -436,11 +436,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285278999338671143, guid: b6989b1039c4d4147a5a9522d3ab1c9c, type: 3}
       propertyPath: force
-      value: 2.7
+      value: 2.57
       objectReference: {fileID: 0}
     - target: {fileID: 7285278999338671143, guid: b6989b1039c4d4147a5a9522d3ab1c9c, type: 3}
       propertyPath: frequency
-      value: 1.4
+      value: 1.14
       objectReference: {fileID: 0}
     - target: {fileID: 7285278999338671143, guid: b6989b1039c4d4147a5a9522d3ab1c9c, type: 3}
       propertyPath: firstDelay
@@ -1666,11 +1666,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285278999338671143, guid: b6989b1039c4d4147a5a9522d3ab1c9c, type: 3}
       propertyPath: force
-      value: 2.7
+      value: 2.57
       objectReference: {fileID: 0}
     - target: {fileID: 7285278999338671143, guid: b6989b1039c4d4147a5a9522d3ab1c9c, type: 3}
       propertyPath: frequency
-      value: 1.4
+      value: 1.14
       objectReference: {fileID: 0}
     - target: {fileID: 7285278999338671143, guid: b6989b1039c4d4147a5a9522d3ab1c9c, type: 3}
       propertyPath: firstDelay
@@ -2218,11 +2218,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285278999338671143, guid: b6989b1039c4d4147a5a9522d3ab1c9c, type: 3}
       propertyPath: force
-      value: 2.7
+      value: 2.57
       objectReference: {fileID: 0}
     - target: {fileID: 7285278999338671143, guid: b6989b1039c4d4147a5a9522d3ab1c9c, type: 3}
       propertyPath: frequency
-      value: 1.4
+      value: 1.14
       objectReference: {fileID: 0}
     - target: {fileID: 7285278999338671143, guid: b6989b1039c4d4147a5a9522d3ab1c9c, type: 3}
       propertyPath: firstDelay

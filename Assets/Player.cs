@@ -183,7 +183,8 @@ public class Player : MonoBehaviour
 
     void ResetPrefs()
     {
-        PlayerPrefs.SetInt("gold", 356);
+        PlayerPrefs.SetInt("gold", 0);
         PlayerPrefs.SetInt("armor", 0);
+        PlayerPrefs.SetInt("max", 0);
     }
 }

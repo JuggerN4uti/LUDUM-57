@@ -1356,11 +1356,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: pauseTime
-      value: 0.25
+      value: 0.26
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: movementSpeed
-      value: 1.35
+      value: 1.48
       objectReference: {fileID: 0}
     - target: {fileID: -3300429140470417469, guid: 861d9ea46db561b4483df6dbb857036d, type: 3}
       propertyPath: turnLeft.Array.size
